@@ -1,3 +1,8 @@
+// Auto-expand textarea in contact form
+function autoExpand(textarea) {
+    textarea.style.height = 'auto';
+    textarea.style.height = textarea.scrollHeight + 'px';
+}
 document.addEventListener('DOMContentLoaded', function() {
 
     // Reveal elements on scroll
