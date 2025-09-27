@@ -1,3 +1,10 @@
+/* Justify alignment for hero and about descriptions */
+.hero .description {
+    text-align: justify;
+}
+.about-content p {
+    text-align: justify;
+}
 /* Auto-expand textarea and prevent resize */
 .auto-expand-textarea {
     resize: none !important; /* Prevent user drag resize */
