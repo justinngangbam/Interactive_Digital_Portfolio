@@ -108,6 +108,14 @@ nav ul li a:hover {
     transform: translateY(-3px);
 }
 
+/* Add this to your style.css */
+.hero .university-detail {
+    font-size: 1.1rem;
+    color: var(--light-color);
+    margin-top: 0.5rem;
+    opacity: 0.9;
+}
+
 /* About Section */
 .about-content {
     display: flex;
