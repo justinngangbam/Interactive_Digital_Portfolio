@@ -1,5 +1,5 @@
-/* Justify alignment for hero and about descriptions */
-.hero .description {
+/* Justify alignment for project and about description */
+.projects .project-card p {
     text-align: justify;
 }
 .about-content p {
