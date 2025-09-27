@@ -1,3 +1,9 @@
+/* Project section technology title and list alignment */
+.project-tech-title,
+.project-tech-list {
+    text-align: left;
+    margin-bottom: 0.5em;
+}
 /* Justify alignment for project and about description */
 .projects .project-card p {
     text-align: justify;
