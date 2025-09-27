@@ -1,3 +1,12 @@
+/* Project section GitHub link color customization */
+.projects .project-card a {
+    color: #fff;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+.projects .project-card a:hover {
+    color: #e53935;
+}
 /* General Styling & Variables */
 :root {
     --primary-color: #3498db;
