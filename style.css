@@ -1,3 +1,8 @@
+/* Auto-expand textarea and prevent resize */
+.auto-expand-textarea {
+    resize: none;
+    overflow-y: hidden;
+}
 /* Project section GitHub link color customization */
 .projects .project-card a {
     color: #fff;

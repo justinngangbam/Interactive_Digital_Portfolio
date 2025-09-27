@@ -3,7 +3,16 @@ function autoExpand(textarea) {
     textarea.style.height = 'auto';
     textarea.style.height = textarea.scrollHeight + 'px';
 }
+
 document.addEventListener('DOMContentLoaded', function() {
+    // Attach autoExpand to all .auto-expand-textarea elements
+    document.querySelectorAll('.auto-expand-textarea').forEach(function(textarea) {
+        textarea.addEventListener('input', function() {
+            autoExpand(this);
+        });
+        // Initial height adjustment
+        autoExpand(textarea);
+    });
 
     // Reveal elements on scroll
     const revealElements = document.querySelectorAll('.reveal');
