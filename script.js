@@ -1,7 +1,10 @@
 // Auto-expand textarea in contact form
 function autoExpand(textarea) {
+    // Reset height to shrink if needed
     textarea.style.height = 'auto';
-    textarea.style.height = textarea.scrollHeight + 'px';
+    // Set height to scrollHeight, but not more than max-height
+    const maxHeight = parseInt(window.getComputedStyle(textarea).maxHeight) || 300;
+    textarea.style.height = Math.min(textarea.scrollHeight, maxHeight) + 'px';
 }
 
 document.addEventListener('DOMContentLoaded', function() {

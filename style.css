@@ -1,7 +1,9 @@
 /* Auto-expand textarea and prevent resize */
 .auto-expand-textarea {
-    resize: none;
+    resize: none !important; /* Prevent user drag resize */
     overflow-y: hidden;
+    min-height: 5em;
+    max-height: 300px;
 }
 /* Project section GitHub link color customization */
 .projects .project-card a {
